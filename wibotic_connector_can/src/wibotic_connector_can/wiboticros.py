@@ -5,6 +5,7 @@
 # ROS Imports
 import rospy
 from wibotic_msg import msg, srv
+from std_msgs.msg import Bool
 
 # Other Imports
 import pyuavcan_v0 as uavcan
@@ -52,6 +53,14 @@ class ROSNodeThread(threading.Thread):
                 msg.WiBoticInfo,
                 queue_size=10,
             )
+
+            charging_pub = rospy.Publisher(
+                "~charging",
+                Bool,
+                queue_size=10,
+            )
+
+            charging_state = Bool()
             while not rospy.is_shutdown():
                 incoming_data = _uav_incoming_info.get()
                 uavcan_dsdl_type = uavcan.get_uavcan_data_type(
@@ -62,11 +71,15 @@ class ROSNodeThread(threading.Thread):
                     unpacked_data[field.name] = getattr(
                         incoming_data, field.name
                     )
+                    if field.name == 'IBattery':
+                        charging_state.data = unpacked_data[field.name] > 0.0
+
                 packaged_data = msg.WiBoticInfo(
                     **unpacked_data
                 )
                 rospy.loginfo(packaged_data)
                 pub.publish(packaged_data)
+                charging_pub.publish(charging_state)
 
         def handle_param_list(self, req):
             params = []
