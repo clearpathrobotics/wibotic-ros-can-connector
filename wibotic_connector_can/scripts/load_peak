@@ -1,0 +1,5 @@
+#!/bin/bash
+DEVID=$1
+BITRATE=$2
+ip link set ${DEVID} type can bitrate ${BITRATE}
+ip link set ${DEVID} up

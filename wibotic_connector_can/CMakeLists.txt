@@ -48,3 +48,7 @@ install(
   src/wibotic_connector_can/uavcan_vendor_specific_types
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
+install(PROGRAMS scripts/load_peak
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

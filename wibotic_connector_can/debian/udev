@@ -1,0 +1,2 @@
+SUBSYSTEM=="net", KERNEL == "can0", RUN+="/opt/ros/noetic/lib/wibotic_connector_can/load_peak can0 1000000"
+
