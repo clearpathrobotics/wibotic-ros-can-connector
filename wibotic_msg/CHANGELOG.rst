@@ -2,8 +2,8 @@
 Changelog for package wibotic_msg
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.1 (2023-01-25)
+------------------
 * Updated CMakeLists and package.xml
 * Removes breaking library declaration
 * Update repository to Rev_8

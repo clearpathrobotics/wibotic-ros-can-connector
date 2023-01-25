@@ -2,8 +2,8 @@
 Changelog for package wibotic_connector_can
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.1 (2023-01-25)
+------------------
 * Updated CMakeLists and package.xml
 * Updated uavcan dependency
 * Added load_peak script and udev rules
