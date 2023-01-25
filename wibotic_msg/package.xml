@@ -3,7 +3,9 @@
   <name>wibotic_msg</name>
   <version>0.0.1</version>
   <description>The wibotic_msg package</description>
-  <maintainer email="info@wibotic.com">WiBotic Inc.</maintainer>
+  <author email="info@wibotic.com">WiBotic Inc.</author>
+  <maintainer email="rkreinin@clearpathrobotics.com">Roni Kreinin</maintainer>
+  <maintainer email="tbaltovski@clearpathrobotics.com">Tony Baltovski</maintainer>
   <license>BSD 3-Clause</license>
   <url type="website">https://www.wibotic.com</url>
 

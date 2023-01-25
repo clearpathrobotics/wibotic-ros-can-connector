@@ -3,7 +3,9 @@
   <name>wibotic_connector_can</name>
   <version>0.0.1</version>
   <description>The wibotic_connector_can package</description>
-  <maintainer email="info@wibotic.com">WiBotic Inc.</maintainer>
+  <author email="info@wibotic.com">WiBotic Inc.</author>
+  <maintainer email="rkreinin@clearpathrobotics.com">Roni Kreinin</maintainer>
+  <maintainer email="tbaltovski@clearpathrobotics.com">Tony Baltovski</maintainer>
   <license>BSD 3-Clause</license>
   <url type="website">https://www.wibotic.com</url>
 
@@ -16,8 +18,8 @@
   <build_export_depend>std_msgs</build_export_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
-  <exec_depend>python-future</exec_depend>
-  <exec_depend>python3-uavcan-v0</exec_depend>
+  <exec_depend>python3-future</exec_depend>
+  <exec_depend>pyuavcan-v0</exec_depend>
   <exec_depend>wibotic_msg</exec_depend>
 
   <export>
