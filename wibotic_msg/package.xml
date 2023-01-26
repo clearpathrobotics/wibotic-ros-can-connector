@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>wibotic_msg</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>The wibotic_msg package</description>
   <author email="info@wibotic.com">WiBotic Inc.</author>
   <maintainer email="rkreinin@clearpathrobotics.com">Roni Kreinin</maintainer>
