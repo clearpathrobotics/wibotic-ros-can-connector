@@ -77,7 +77,7 @@ class ROSNodeThread(threading.Thread):
                 packaged_data = msg.WiBoticInfo(
                     **unpacked_data
                 )
-                rospy.loginfo(packaged_data)
+                rospy.logdebug(packaged_data)
                 pub.publish(packaged_data)
                 charging_pub.publish(charging_state)
 
