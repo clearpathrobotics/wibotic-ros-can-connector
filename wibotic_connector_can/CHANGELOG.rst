@@ -2,6 +2,11 @@
 Changelog for package wibotic_connector_can
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Changed data info logs to debug logs
+* Contributors: Roni Kreinin
+
 0.0.1 (2023-01-25)
 ------------------
 * Updated CMakeLists and package.xml
